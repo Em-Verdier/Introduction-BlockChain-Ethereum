@@ -25,9 +25,9 @@ Ces deux nombres, le hash de chiffrement du bloc précédent ainsi que le hash d
  
  ![Exemple](https://raw.githubusercontent.com/AbsoluteVirtueXI/alyra-courses/master/res/blockheader.png)
  
- Ce processus l'intégrité du bloc de celui-ci, à tous les précédents jusqu'au tout premier bloc de la chaîne `genesis block`.
+ Ce processus confirme l'intégrité d'un bloc, en partant celui-ci, en passant par tous les précédents jusqu'au tout premier bloc de la chaîne `genesis block`.
  
- Si un agent malicieux veut modifier un bloc, par exemple en chageant un montant de transaction, il va altérer le hash de toutes les transactions dans le bloc. Donc il devra à nouveau miner ce bloc. Cette opération va changer la totalité des hash du bloc, et tous les blocs suivants auront un hash différent stocké dans leur entête, du bloc précédent. Par conséquent l'acteur malveillant devra aussi reminer tous les blocs suivants afin qu'ils soient basés sur le hash du bloc fabriqué par l'attaquant.
+ Si un agent malicieux veut modifier un bloc, par exemple en chageant un montant de transaction, il va altérer le hash de toutes les transactions dans le bloc. Donc il devra à nouveau miner ce bloc. Cette opération va changer la totalité des hash du bloc reforgé, et à parti de lui et tous les blocs suivants auront un hash différent du bloc qui les précède, stocké dans leur entête. Par conséquent l'acteur malveillant devra aussi reminer tous les blocs suivants celui qu'il a modifié afin qu'ils soient basés sur le hash du bloc fabriqué par l'attaquant.
  Une autre solution de protection tendant à prévenir ce genre de modifications est le mécanisme de consensus. Les attaquants on besoin de contrôler 51% de la puissance de calcul du réseau pour modifier à leur avantage ou inverser les transactions déjà effectuées dans la chaîne de blocs. Ce phénomène est appelé `Attaque des 51%` __51% Attack__. Inutile de dire que c'est actuellement impossible, car les attaquants aurait besoin de beaucoup trop de puissance de calcul et quand bien même ils réussiraient, celà annihilerait la confiance placée dans cette blockchain par les acteurs et ces derniers partiraient.
  
 
