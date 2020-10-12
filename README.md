@@ -67,7 +67,17 @@ Dans l'objectif d'ajouter un bloc malveillant, il faudrait que l'attaquant poss�
 Historiquement, Ethereum a appliqué par le passé un consensus de preuve de travail. Cependant une des raisons pour lesquelles elle a migré vers la preuve d'enjeu est, que celle-ci est bien plus efficace énergétiquement que la preuve de travail.
 
 
-### __Minage__
+### __Minage__ (Mining)
+
+Le mnieur crée des blocs dans la chaîne.
+Un bloc est une structure de données qui contient un ensemble de transactions. A la création d'un bloc, le mineur sélectionne des transactions dans son réservoir de trasaction en attente (trasactions attendant d'être inclues dans la chaîne) et lance la création du bloc.
+La chose importante à retenir est que le minage est un processus coûteux. C'est pourquoi, si un mineur ne reçevait rien en échange, personne ne minerait. Dans Ethereum, quand un mineur mine un nouveau bloc, il reçoit les honoraires provenant des transactions dans le bloc en cours ainsi qu'un bloc en récompense (actuellement 2 ETH). Donc, plus haut sera le GasPrice dans les transactions, plus hauts seront les honoraires reçus par le mineur.
+
+
+### __Honoraires/Gaz__ (Fees/Gas)
+
+
+
 
 
 
