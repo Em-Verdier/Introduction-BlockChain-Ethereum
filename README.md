@@ -1,4 +1,4 @@
-:shipit: # Introduction-BlockChain-Ethereum  :chains:
+# Introduction-BlockChain-Ethereum  :chains: :shipit: :chains:
 
 ### __DLT: Distributed Ledger Techonlogy ou technologie de registres distribués alias Chaîne de blocs (*BlockChain*)__
 
@@ -37,6 +37,38 @@ Ces deux nombres, le hash de chiffrement du bloc précédent ainsi que le hash d
 
  Dans une réseau distribué __*Distributed network*__ il n'y à pas d'unique ou même plusieurs points de gouvernance faisant autorité. L'objectif étant de d'éviter la centralisation d'une attaque et donc un seul point de faille __(*SPOF*)__ C'est pourquoi les mécaniques de consensus sont utilisées pour être certain que chaques noeuds, dans un réseau distribué, fonctionnent ensemble et jamais de manière malveillante.
  Dans le cas d'un réseau de chaîne de blocs, les mécanismes de consensus sont utilisés afin de contrôler comment une transaction de chaînes de blocs peut être confirmée écrite et executée.
+
+
+### __Les mécanismes de consensus__
+ 
+##### Le problème des généraux byzantins (*BFT :  Byzantine Fault Tolerance*)
+
+https://fr.wikipedia.org/wiki/Probl%C3%A8me_des_g%C3%A9n%C3%A9raux_byzantins
+
+
+##### La preuve de travail __(*PoW: Proof of Work*)__
+
+C'est un algoritme de consensus original. Avec la *`preuve de travail`*, les mineurs sont en compétition les uns avec les autres afin de terminer des transactions et d'ajouter les nouveaux blocs à la BlockChain.
+Les mineurs doivent résoudre un puzzle complexe en utilisant la puissance de processeur de leur(s) machine(s).
+Le puzzle mathématique à résoudre consiste à trouver le nombre du hash de l'entête du bloc courant en manipulant le champs du *`nonce`* de ce bloc.
+Le `nombre du hash` à trouver doit être inférieur au `hash cible`. `Le hash cible` est défini par la `difficulté`.
+
+![Exemple](https://raw.githubusercontent.com/AbsoluteVirtueXI/alyra-courses/master/res/bitcoin_block_hashing.jpg)
+
+Le premier mineur qui résoud le puzzle est récompensé pour son travail.
+Une preuve de travail est un bout de données qui est difficile à produire(coûteux, chronophage), mais facile à vérifier par les autres et qui répond à certaines exigences.
+
+##### La preuve d'enjeu ou preuve de participation __(*PoS: Proof of Stake*)__
+
+
+
+
+
+
+
+
+
+
  
  
  
