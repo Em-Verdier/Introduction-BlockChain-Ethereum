@@ -76,6 +76,43 @@ La chose importante à retenir est que le minage est un processus coûteux. C'es
 
 ### __Honoraires/Gaz__ (Fees/Gas)
 
+Les honoraires dans la chaîne de blocs Bitcoin, ou le système de gaz dans la chaîne de blocs Ethereum sont des systèmes de protection et de récompense pour les noeuds qui traitent les transactions, calculer coûte de l'argent:
+
+* héberger un service
+* stocker des données
+* traiter de l'information
+
+Chaque transactionj qui modifie un état de la chaîne de blocs, comme l'envoi de crypto-monnaie, le déploiement d'un smart contract ou le changement de valeur dans ce dernier coûte à l'émetteur des honoraires.
+
+Un autre aspect de la taxe des actions des utilisateurs sur le réseau est la prévention des abus. Si vous payez chaques actions que vous exécutez, vous viez la manière la plus efficace pour implémenter votre code. le coup des honoraires prévient aussi des acteurs malveillants qui satureraient le réseau avec des opérations (à moins qu'ils veuillent dépenser un fric fou à faire n'importe quoi).
+
+### __Le chiffrement asymétrique__ (asysmetric cryptography)
+
+Le coeur du chiffrement asysmétrique est l'usage d'une paire de clé publique et privée. une clé privée est un nombre aléatoire. La clé publique qui lui est associée, est un nombre généré par un algoritme à sens unique basé sur la clé privé. Cet algoritme est un algoritme à signature courbe elliptique digitale *`(ecdsa)`*. La courbe elliptique utilisée par le Bitcoin, Ethereum et bien d'autres crypto-monnaies est appellée secp256k1. L'équation pour le secp256k1 curve is y² = x³+7. Cette courbe ressemble à ça:
+
+![Exemple](https://raw.githubusercontent.com/AbsoluteVirtueXI/alyra-courses/master/res/ecdsa.gif)
+
+Une clé privé est un grand nombre, de préférence, aléatoirement généré. La clé privé doit impérativement rester secrète. Une clé publique est un grand nombre obtenu par un `edcsa` sur la clé privée. La clé publique peut être partagée avec n'importe qui, sans compromettre la sécurité. Une adresse est obtenue depuis la clé publiqueavec une fonction de hash. Une transaction contient le message de la transaction ainsi qu'une signature de ce message générée avec la clé privée de l'émetteur. Tout le monde peut vérifier la signature générée afin de : 
+
+* récupérer la clé publique et l'adresse du signataire
+* vérifier l'intégrité du message, voire si c'est le même message signé par le signataire.
+
+Avec la signature et le hash de les données originales on peut effectuer une `récupération de signature courbe elliptique` et obtenir la clé publique et donc l'adresse. Si l'adresse récupéree est identique à l'adresse de l'émetteur, alors le détenteur de la clé privé de la clé publique apairée a bien signé ce message.
+
+## **Ethereum**
+
+### Ethereum contre Bitcoin
+
+Bitcoin white paper: https://bitcoin.org/bitcoin.pdf Ethereum yellow paper: https://ethereum.github.io/yellowpaper/paper.pdf
+
+Techniquement Ethereum et Bitcoin suivent le même schéma dans leur implémentation, mais on peut noter trois différences majeures entre ces deux blockchains:
+
+* Ethereum a une machine virtuelle `EVM` qui peut exécuter des instructions et stocker des données.
+* Ethereum offre la possibilité de déploiement et d'usage de smart contracts ainsi qu'une amélioration de la version de Bitcoin `script`. Les instructions des `smart contracts` sont executées dans la machine virtuelle y compris le stockage de données.
+* Ethereum a introduit `gas`, un système amélioré des honoraires de Bitcoin.
+
+
+
 
 
 
