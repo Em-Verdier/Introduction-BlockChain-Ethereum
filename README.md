@@ -4,8 +4,8 @@ __DLT: Distributed Ledger Techonlogy ou technologie de registres distribués ali
 
 La Blockchain résoud deux types de problèmes : 
 
-1.l'immutabilité : les données ne peuvent être modifiées.
-2.le processus de distribution : désormais il n'y à pas un seul point de gouvernance ou/et possiblement un seul point de faille (cible unique et trop visible pour l'attaquant appelée `SPOF`), chaque noeud travaille ensemble basée sur un mécanisme de consensus qui protège d'agents malicieux.
+1. L'immutabilité : les données ne peuvent être modifiées
+2. Le processus de distribution : désormais il n'y à pas un seul point de gouvernance ou/et possiblement un seul point de faille (cible unique et trop visible pour l'attaquant appelée `SPOF`), chaque noeud travaille ensemble basée sur un mécanisme de consensus qui protège d'agents malicieux.
 
 __Immutabilité (Immutability)__
 
