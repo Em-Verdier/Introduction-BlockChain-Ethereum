@@ -15,4 +15,4 @@ La `fonction de hash de chiffrement` est une fonction à sens unique(fonction ir
 Ces deux nombres, le hash de chiffrement du bloc précédent ainsi que le hash de chiffrement de toutes les transactions confirmées sont enregistrés dans l'`entête` du  nouveau bloc__(block header)__ en cours.
 
 
- \Format\:![](https://raw.githubusercontent.com/AbsoluteVirtueXI/alyra-courses/master/res/blockchain.jpeg)
+ Format:![Exemple](https://raw.githubusercontent.com/AbsoluteVirtueXI/alyra-courses/master/res/blockchain.jpeg)
