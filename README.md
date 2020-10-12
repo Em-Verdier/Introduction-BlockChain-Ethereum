@@ -1,6 +1,6 @@
 # Introduction-BlockChain-Ethereum
 
-##***DLT: Distributed Ledger Techonlogy ou technologie de registres distribués alias Chaîne de blocs (BlockChain)***
+__##DLT: Distributed Ledger Techonlogy ou technologie de registres distribués alias Chaîne de blocs (BlockChain)__
 
 La Blockchain résoud deux types de problèmes : 
 
