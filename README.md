@@ -1,6 +1,6 @@
 # Introduction-BlockChain-Ethereum  :chains: :shipit: :chains:
 
-### __DLT: Distributed Ledger Techonlogy ou technologie de registres distribués alias Chaîne de blocs (*BlockChain*)__
+###  __DLT: Distributed Ledger Techonlogy ou technologie de registres distribués alias Chaîne de blocs (*BlockChain*)__
 
 La Blockchain résoud deux types de problèmes : 
 
@@ -39,14 +39,14 @@ Ces deux nombres, le hash de chiffrement du bloc précédent ainsi que le hash d
  Dans le cas d'un réseau de chaîne de blocs, les mécanismes de consensus sont utilisés afin de contrôler comment une transaction de chaînes de blocs peut être confirmée écrite et executée.
 
 
-### __Les mécanismes de consensus__
+### __Les mécanismes de consensus__ (non exhaustif)
  
-##### Le problème des généraux byzantins (*BFT :  Byzantine Fault Tolerance*)
+#### 1. Le problème des généraux byzantins (*BFT :  Byzantine Fault Tolerance*)
 
 https://fr.wikipedia.org/wiki/Probl%C3%A8me_des_g%C3%A9n%C3%A9raux_byzantins
 
 
-##### La preuve de travail __(*PoW: Proof of Work*)__
+#### 2. La preuve de travail __(*PoW: Proof of Work*)__
 
 C'est un algoritme de consensus original. Avec la *`preuve de travail`*, les mineurs sont en compétition les uns avec les autres afin de terminer des transactions et d'ajouter les nouveaux blocs à la BlockChain.
 Les mineurs doivent résoudre un puzzle complexe en utilisant la puissance de processeur de leur(s) machine(s).
@@ -58,8 +58,16 @@ Le `nombre du hash` à trouver doit être inférieur au `hash cible`. `Le hash c
 Le premier mineur qui résoud le puzzle est récompensé pour son travail.
 Une preuve de travail est un bout de données qui est difficile à produire(coûteux, chronophage), mais facile à vérifier par les autres et qui répond à certaines exigences.
 
-##### La preuve d'enjeu ou preuve de participation __(*PoS: Proof of Stake*)__
+#### 3. La preuve d'enjeu ou preuve de participation __(*PoS: Proof of Stake*)__
 
+La `preuve de travail` ou `preuve de participation` est un type d'algoritme de consensus grâce auquel un réseau BlockChain de crypto-monnaie a pour objectif de réaliser un consensus distribué. Dans les BlockChains basées sur la preuve d'enjeu, le créateur du prochain bloc est choisi par de nombreuses combinaisons de sélections aléatoires, et sa fortune(en crypto-monnaie) et son âge. Dans le cas de la BlockChain Ethereum, il y à un minimum de 32 ETH requis pour participer à l'enjeu, et les validateurs doivent lancer un noeud de validation. Ca ne necessite pas d'être un spécialiste hardware, celà peut être réaliser sur un ordinateur ayant un grade de simple client ou un pc portable. Toutefois, les validateurs sont attendus comme suffisamment connectés sous peine de pénalités mineures.
+Dans le cas où la chaîne de blocs applique un consensus de `preuve de travail` __(*PoS*)__, mineurs, validateurs, stackers(accumulateurs) peuvent miner ou valider des blocs de transactions en fonction du montant de crypto-monnaie qu'ils possèdent.
+Dans l'objectif d'ajouter un bloc malveillant, il faudrait que l'attaquant possède 51% du total de la crypto-monnaie du réseau.
+
+Historiquement, Ethereum a appliqué par le passé un consensus de preuve de travail. Cependant une des raisons pour lesquelles elle a migré vers la preuve d'enjeu est, que celle-ci est bien plus efficace énergétiquement que la preuve de travail.
+
+
+### __Minage__
 
 
 
