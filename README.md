@@ -13,3 +13,6 @@ Dans une chaîne de blocs toutes les transactions sont stockées dans un block. 
 Le `hash de chiffrement` est un hash produit par une `fonction de hash de chiffrement`.
 La `fonction de hash de chiffrement` est une fonction à sens unique(fonction irréversible)qui va remplacer le contenu d'un block par un nombre.
 Ces deux nombres, le hash de chiffrement du bloc précédent ainsi que le hash de chiffrement de toutes les transactions confirmées sont enregistrés dans l'`entête` du  nouveau bloc__(block header)__ en cours.
+
+
+Format: ![](https://raw.githubusercontent.com/AbsoluteVirtueXI/alyra-courses/master/res/blockchain.jpeg)
