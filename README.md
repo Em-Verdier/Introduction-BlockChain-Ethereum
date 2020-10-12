@@ -16,3 +16,13 @@ Ces deux nombres, le hash de chiffrement du bloc précédent ainsi que le hash d
 
 
  Format:![Exemple](https://raw.githubusercontent.com/AbsoluteVirtueXI/alyra-courses/master/res/blockchain.jpeg)
+ 
+ Dessous regardons comment ce processus est implémenté dans par le code:
+ 
+ Format:![Exemple](https://raw.githubusercontent.com/AbsoluteVirtueXI/alyra-courses/master/res/codeview.jpg)
+ 
+ Ici une vue d'ensemble d'entêtes de blocs:
+ 
+ Format:![Exemple](https://raw.githubusercontent.com/AbsoluteVirtueXI/alyra-courses/master/res/blockheader.png)
+ 
+ 
